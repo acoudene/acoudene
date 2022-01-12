@@ -1,6 +1,5 @@
 - 👋 Hi, I’m Anthony
-- 👀 I'm technology-agnostic, even if I am addicted to Microsoft technologies, I loved them.
-- I'm technology enthousiast!
+- 👀 I'm technology-agnostic, technology enthousiast even if I am addicted to Microsoft technologies, I loved them.
 
 <!---
 acoudene/acoudene is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
