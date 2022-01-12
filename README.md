@@ -1,5 +1,6 @@
 - 👋 Hi, I’m Anthony
-- 👀 I’m interested in Development (!) through Microsoft technologies
+- 👀 I'm technology-agnostic, even if I am addicted to Microsoft technologies
+- I'm technology lover, 
 
 <!---
 acoudene/acoudene is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
