@@ -1,0 +1,219 @@
+
+%-------------------------------------------------------------------------------
+%                             ADDITIONAL PACKAGES
+%-------------------------------------------------------------------------------
+\documentclass[
+	a4paper,
+	% showframes,
+	% vline=2.2em,
+	% maincolor=cvgreen,
+	% sidecolor=gray!50,
+	% sectioncolor=red,
+	% subsectioncolor=orange,
+	% itemtextcolor=black!80,
+	% sidebarwidth=0.4\paperwidth,
+	% topbottommargin=0.03\paperheight,
+	% leftrightmargin=20pt,
+	% profilepicsize=4.5cm,
+	% profilepicborderwidth=3.5pt,
+	% profilepicstyle=profilecircle,
+	% profilepiczoom=1.0,
+	% profilepicxshift=0mm,
+	% profilepicyshift=0mm,
+	% profilepicrounding=1.0cm,
+]{fortysecondscv}
+
+% improve word spacing and hyphenation
+\usepackage{microtype}
+\usepackage{ragged2e}
+
+% uncomment in case you don't want any hyphenation
+% \usepackage[none]{hyphenat}
+
+% take care of proper font encoding
+\ifxetexorluatex
+	\usepackage{fontspec}
+	\defaultfontfeatures{Ligatures=TeX}
+%	\newfontfamily\headingfont[Path = fonts/]{segoeuib.ttf} % local font
+\else
+	\usepackage[utf8]{inputenc}
+	\usepackage[T1]{fontenc}
+%	\usepackage[sfdefault]{noto} % use noto google font
+\fi
+
+% enable mathematical syntax for some symbols like \varnothing
+\usepackage{amssymb}
+
+% bubble diagram configuration
+\usepackage{smartdiagram}
+\smartdiagramset{
+	% default font size is \large, so adjust to harmonize with sidebar layout
+	bubble center node font = \footnotesize,
+	bubble node font = \footnotesize,
+	% default: 4cm/2.5cm; make minimum diameter relative to sidebar size
+	bubble center node size = 0.4\sidebartextwidth,
+	bubble node size = 0.25\sidebartextwidth,
+	distance center/other bubbles = 1.5em,
+	% set center bubble color
+	bubble center node color = maincolor!70,
+	% define the list of colors usable in the diagram
+	set color list = {maincolor!10, maincolor!40,
+	maincolor!20, maincolor!60, maincolor!35},
+	% sets the opacity at which the bubbles are shown
+	bubble fill opacity = 0.8,
+}
+
+
+%-------------------------------------------------------------------------------
+%                            PERSONAL INFORMATION
+%-------------------------------------------------------------------------------
+%% mandatory information
+% your name
+\cvname{Anthony Coudène}
+% job title/career
+\cvjobtitle{Senior Software Engineer,\\[0.2em] Architect, Microsoft Expert}
+
+%% optional information
+% profile picture
+\cvprofilepic{Moi_Pacs.jpg}
+
+% NOTE: ordering in sidebar will mimic the following order
+% date of birth
+\cvbirthday{44 ans, PACsé, 2 enfants, Permis B}
+% short address/location, use \newline if more than 1 line is required
+\cvaddress{14 Rue Lucien Sampaix \newline 38130 ECHIROLLES}
+% phone number
+\cvphone{06 81 47 24 57}
+% personal website
+%\cvsite{https://pandascience.net}
+% email address
+\cvmail{anthony.coudene@gmail.com}
+% pgp key
+%\cvkey{4096R/FF00FF00}{0xAABBCCDDFF00FF00}
+% any other custom entry
+%\cvcustomdata{\faFlag}{Chinese}
+
+%-------------------------------------------------------------------------------
+%                              SIDEBAR 1st PAGE
+%-------------------------------------------------------------------------------
+% add more profile sections to sidebar on first page
+\addtofrontsidebar{
+	% include gosquare national flags from https://github.com/gosquared/flags;
+	% naming according to ISO 3166-1 alpha-2 country codes
+	\graphicspath{{/}}
+
+	% social network accounts incl. proper hyperlinks
+	\profilesection{Social Network}
+		\begin{icontable}{2em}{0.5em}
+            \social{\faLinkedinSquare}                    {https://www.linkedin.com/in/anthony-coudène-aa0048b/}
+                {linkedin.com/in/anthony-coudène-aa0048b}
+			\social{\faGithubSquare}
+				{https://github.com/acoudene}
+				{github.com/acoudene}
+		\end{icontable}
+
+    \profilesection{Microsoft Skills}
+	\begin{sidebarminipage}
+        \chartlabel{Azure}
+		\chartlabel{.Net Core}
+		\chartlabel{.Net Framework}
+		\chartlabel{Asp.Net Core}
+		\chartlabel{Blazor WASM|Server}
+		\chartlabel{WCF}
+		\chartlabel{EF}
+		\chartlabel{EF Core}
+		\chartlabel{SQL-Server}
+		\chartlabel{XAML/MVVM Techs}
+		\chartlabel{...}
+	\end{sidebarminipage}
+
+    \profilesection{Hard Skills}
+	\begin{sidebarminipage}
+        \chartlabel{Cloud}
+		\chartlabel{Design Patterns}
+		\chartlabel{SOA}
+		\chartlabel{Microservices}
+		\chartlabel{Desktop}
+		\chartlabel{Web}
+		\chartlabel{Containerization}
+		\chartlabel{Ergonomics}
+		\chartlabel{...}
+	\end{sidebarminipage}
+
+	\profilesection{Soft Skills}
+	\begin{sidebarminipage}
+	    \chartlabel{Microsoft addict}
+        \chartlabel{Tech-agnostic}
+		\chartlabel{Tech lover}
+		\chartlabel{Human First}
+		\chartlabel{Agility}
+		\chartlabel{Team spirit}
+		\chartlabel{Coaching}
+		\chartlabel{...}
+	\end{sidebarminipage}
+			
+	\profilesection{Langues}
+	    \pointskill{\flag{GB.png}}{anglais}{4}
+	    \pointskill{\flag{IT.png}}{italien}{2}
+	
+}
+
+
+
+%-------------------------------------------------------------------------------
+%                         TABLE ENTRIES RIGHT COLUMN
+%-------------------------------------------------------------------------------
+\begin{document}
+
+\makefrontsidebar
+
+\cvsection{Expérience Professionnelle}
+\begin{cvtable}
+	\cvitem{2019 -- Aujourd'hui}{Senior Software Architect}{Technidata (technidata-web.com)}{Architecte/Développeur | Encadrement transverse équipe R\&D | Responsable Framework | Technologies Microsoft (.Net Core/.Net 6, Asp.Net Core MVC, Blazor, EF Core, WPF,...)}
+	\cvitem{}{}{}{}
+	\cvitem{2010 -- 2019}{Software Architect}{Technidata (technidata-web.com)}{Architecte/Développeur | Migration Technologique de l'Entreprise | Responsable Framework | Technologies Microsoft (.Net Framework, Asp.Net Core MVC, EF, Silverlight, WPF,...)}
+	\cvitem{}{}{}{}
+    \cvitem{2008 -- 2010}{Chief Technical Officer}{GN MULTIMEDIA}{Architecte et développeur Web | Cycle en « Y » | Mise en place processus Qualité | Management de 6 développeurs | Java EE (Hibernate/Spring/Zk)| PHP (Zend) | Administration SVN | Administration MySQL | IT Linux | Domaining | Création CMS optimisé SEO }
+	\cvitem{}{}{}{}    
+    \cvitem{2002 -- 2008}{Software Engineer}{Technidata (technidata-web.com)}{Développeur/Architecte Technique Objet | Cycle en « V » | UML | Asp.Net | C++ | Visual Studio | Team System/SourceSafe | Oracle/SQL-Server}
+    \cvitem{}{}{}{}
+    \cvitem{Juin -- Sept. 2001}{Stage Consulting/Management}{Silverpeas (silverpeas.com)}{Mise en place service de Consulting | Accompagnement Chef de Produit | Tests
+    fonctionnels du produit }
+	\cvitem{Jan. -- Sept. 2000}{Stage/Alternance Software Engineer}{Xerox Research Centre Europe}{Développement solution de traduction | Application principes de Génie Logiciel | Evaluation Ergonomique | J2EE | Perl}
+	\cvitem{Juin -- Août 1999}{Stage Maîtrise Informatique}{France Télécom}{Administration | Analyse | Prévention incidents systèmes/réseaux}
+    \cvitem{Fév. -- Mai 1999}{Stage/Alternance Maîtrise Informatique}{Laboratoire TIMA/IMAG}{Conception logicielle/matérielle | Equipe System Level Synthesis (Ahmed Amine Jerraya, Paul Amblard) | Lustre | Handle C}
+    \cvitem{Sept. 1997 -- Juil. 1998}{Stage Licence/Magistère Informatique}{Laboratoire CLIPS/IMAG}{Filtres de publication sur flux vidéo | Equipe Ingénierie de l’Interaction Homme–Machine (Joëlle Coutaz, François Bérard) | Mediaspace | C++}
+\end{cvtable}
+
+
+\cvsection{Certifications}
+\begin{cvtable}[1.5]
+	\cvitem{2019}{Microsoft Certified Solutions Developer}{Microsoft}
+		{MCSD AppBuilder | Examen 70-487 - Developing Microsoft Azure and Web Services (821)}
+	\cvitem{2019}{Microsoft Certified Solutions Associate}{Microsoft}
+		{MCSA WebApplication | Examen 70-486 - Developing ASP.NET MVC Web Applications (811) | Examen 70-483 - Programming in C\# (873)}
+\end{cvtable}
+
+\cvsection{Diplômes}
+\begin{cvtable}[1.5]
+	\cvitem{2001}{DESS Certificat d'Aptitude à l'Administration des Entreprises}{IAE Grenoble (grenoble-iae.fr)}
+	{}
+    \cvitem{2000}{DESS Génie Informatique}{IMAG (im2ag.univ-grenoble-alpes.fr)}
+	{}
+	\cvitem{1997 -- 1999}{Licence | Magistère | Maîtrise Informatique}{IMAG (im2ag.univ-grenoble-alpes.fr)}
+	{}
+	\cvitem{1995 -- 1997}{DEUG Mathématiques, Informatique et Applications aux Sciences}{UGA (univ-grenoble-alpes.fr)}
+	{}
+\end{cvtable}
+
+\cvsection{Centres d'intérêts}
+\begin{cvtable}
+    \cvitemshort{Coaching}{Certifié en Préparation Mentale pour la Performance Professionnelle/Sportive (Diplôme LNF 2021)}
+	\cvitemshort{Touch Rugby}{Equipe de France (2006 à 2008), 4ème Coupe d'Europe 2008, Président de Section à l'ASPTT Grenoble depuis 2015}
+	\cvitemshort{Musique}{Piano, Didgeridoo, Batterie}
+	\cvitemshort{Santé}{Attestation de Formation aux Premiers Secours}
+\end{cvtable}
+
+%\cvsignature
+
+\end{document}
