@@ -1,3 +1,24 @@
+% FortySecondsCV LaTeX template
+% Copyright © 2019-2020 René Wirnata <rene.wirnata@pandascience.net>
+% Licensed under the 3-Clause BSD License. See LICENSE file for details.
+%
+% Please visit https://github.com/PandaScience/FortySecondsCV for the most
+% recent version! For bugs or feature requests, please open a new issue on
+% github.
+%
+% Contributors
+% ------------
+% * ifokkema
+% * Bertbk
+% * Hespe
+%
+% Attributions
+% ------------
+% * fortysecondscv is based on the twentysecondcv class by Carmine Spagnuolo
+%   (cspagnuolo@unisa.it), released under the MIT license and available under
+%   https://github.com/spagnuolocarmine/TwentySecondsCurriculumVitae-LaTex
+% * further attributions are indicated immediately before corresponding code
+
 
 %-------------------------------------------------------------------------------
 %                             ADDITIONAL PACKAGES
@@ -75,11 +96,11 @@
 
 %% optional information
 % profile picture
-\cvprofilepic{Moi_Pacs.jpg}
+\cvprofilepic{Moi_2025_4.png}
 
 % NOTE: ordering in sidebar will mimic the following order
 % date of birth
-\cvbirthday{44 ans, PACsé, 2 enfants, Permis B}
+\cvbirthday{47 ans, PACsé, 2 enfants, Permis B}
 % short address/location, use \newline if more than 1 line is required
 \cvaddress{14 Rue Lucien Sampaix \newline 38130 ECHIROLLES}
 % phone number
@@ -115,15 +136,15 @@
     \profilesection{Microsoft Skills}
 	\begin{sidebarminipage}
         \chartlabel{Azure}
-		\chartlabel{.Net Core}
-		\chartlabel{.Net Framework}
-		\chartlabel{Asp.Net Core}
-		\chartlabel{Blazor WASM|Server}
-		\chartlabel{WCF}
-		\chartlabel{EF}
-		\chartlabel{EF Core}
-		\chartlabel{SQL-Server}
-		\chartlabel{XAML/MVVM Techs}
+		\chartlabel{.Net Framework|.Net}
+		\chartlabel{C++}
+        \chartlabel{Asp.Net Core MVC | Web API | Razor}		
+        \chartlabel{EF | EF Core}
+		\chartlabel{SQL-Server}			
+  		\chartlabel{Blazor}
+		\chartlabel{WPF|MAUI}		
+        \chartlabel{OData}
+        \chartlabel{WCF}	
 		\chartlabel{...}
 	\end{sidebarminipage}
 
@@ -131,31 +152,34 @@
 	\begin{sidebarminipage}
         \chartlabel{Cloud}
 		\chartlabel{Design Patterns}
-		\chartlabel{SOA}
-		\chartlabel{Microservices}
-		\chartlabel{Desktop}
-		\chartlabel{Web}
-		\chartlabel{Containerization}
-		\chartlabel{Ergonomics}
+		\chartlabel{IA|MCP}	
+        \chartlabel{NoSql|Rel.}
+		\chartlabel{K8S|Docker}		
+        \chartlabel{UX}
+        \chartlabel{Microservices}
+		\chartlabel{Desktop|Web}                	
 		\chartlabel{...}
 	\end{sidebarminipage}
 
 	\profilesection{Soft Skills}
 	\begin{sidebarminipage}
-	    \chartlabel{Microsoft addict}
-        \chartlabel{Tech-agnostic}
-		\chartlabel{Tech lover}
+	    \chartlabel{Microsoft addict}        
+        \chartlabel{Tech-agnostic}		
 		\chartlabel{Human First}
 		\chartlabel{Agility}
 		\chartlabel{Team spirit}
+        \chartlabel{Open-minded}
 		\chartlabel{Coaching}
 		\chartlabel{...}
 	\end{sidebarminipage}
 			
 	\profilesection{Langues}
 	    \pointskill{\flag{GB.png}}{anglais}{4}
-	    \pointskill{\flag{IT.png}}{italien}{2}
+	    \pointskill{\flag{IT.png}}{italien}{3}
 	
+	\begin{cvtable}
+	    \cvitem{\tiny V20251212}{\tiny Généré via LaTex}{}{}
+    \end{cvtable}
 }
 
 
@@ -169,26 +193,27 @@
 
 \cvsection{Expérience Professionnelle}
 \begin{cvtable}
-	\cvitem{2019 -- Aujourd'hui}{Senior Software Architect}{Technidata (technidata-web.com)}{Architecte/Développeur | Encadrement transverse équipe R\&D | Responsable Framework | Technologies Microsoft (.Net Core/.Net 6, Asp.Net Core MVC, Blazor, EF Core, WPF,...)}
-	\cvitem{}{}{}{}
+    \cvitem{2022 -- Aujourd'hui}{Tech Lead}{Salvia Développement (salviadeveloppement.fr)}{Consultant/Développeur | SaaS Multitenant | Expertise, développement et formation | Technologies Microsoft et associées  (.Net, Blazor WebAssembly, MongoDB, K8S, Docker, Keycloak, MAUI,...)}
+    \cvitem{2019 -- Aujourd'hui}{Senior Software Architect}{Technidata (technidata-web.com)}{Architecte/Développeur | Encadrement transverse équipe R\&D | Responsable Framework | Technologies Microsoft (.Net, Asp.Net Core MVC, Blazor, EF Core, WPF,...)}
 	\cvitem{2010 -- 2019}{Software Architect}{Technidata (technidata-web.com)}{Architecte/Développeur | Migration Technologique de l'Entreprise | Responsable Framework | Technologies Microsoft (.Net Framework, Asp.Net Core MVC, EF, Silverlight, WPF,...)}
-	\cvitem{}{}{}{}
     \cvitem{2008 -- 2010}{Chief Technical Officer}{GN MULTIMEDIA}{Architecte et développeur Web | Cycle en « Y » | Mise en place processus Qualité | Management de 6 développeurs | Java EE (Hibernate/Spring/Zk)| PHP (Zend) | Administration SVN | Administration MySQL | IT Linux | Domaining | Création CMS optimisé SEO }
-	\cvitem{}{}{}{}    
-    \cvitem{2002 -- 2008}{Software Engineer}{Technidata (technidata-web.com)}{Développeur/Architecte Technique Objet | Cycle en « V » | UML | Asp.Net | C++ | Visual Studio | Team System/SourceSafe | Oracle/SQL-Server}
-    \cvitem{}{}{}{}
+   \cvitem{2002 -- 2008}{Software Engineer}{Technidata (technidata-web.com)}{Développeur/Architecte Technique Objet | Cycle en « V » | UML | Asp.Net | C++ | Visual Studio | Team System/SourceSafe | Oracle/SQL-Server}
     \cvitem{Juin -- Sept. 2001}{Stage Consulting/Management}{Silverpeas (silverpeas.com)}{Mise en place service de Consulting | Accompagnement Chef de Produit | Tests
     fonctionnels du produit }
-	\cvitem{Jan. -- Sept. 2000}{Stage/Alternance Software Engineer}{Xerox Research Centre Europe}{Développement solution de traduction | Application principes de Génie Logiciel | Evaluation Ergonomique | J2EE | Perl}
+	\cvitem{Jan. -- Sept. 2000}{Stage/Alternance Software Engineer}{Xerox Research Centre Europe}{ Traduction | Génie Logiciel \& Evaluation Ergonomique | J2EE}
 	\cvitem{Juin -- Août 1999}{Stage Maîtrise Informatique}{France Télécom}{Administration | Analyse | Prévention incidents systèmes/réseaux}
     \cvitem{Fév. -- Mai 1999}{Stage/Alternance Maîtrise Informatique}{Laboratoire TIMA/IMAG}{Conception logicielle/matérielle | Equipe System Level Synthesis (Ahmed Amine Jerraya, Paul Amblard) | Lustre | Handle C}
-    \cvitem{Sept. 1997 -- Juil. 1998}{Stage Licence/Magistère Informatique}{Laboratoire CLIPS/IMAG}{Filtres de publication sur flux vidéo | Equipe Ingénierie de l’Interaction Homme–Machine (Joëlle Coutaz, François Bérard) | Mediaspace | C++}
+    \cvitem{Sept. 1997 -- Juil. 1998}{Stage Licence/Magistère Informatique}{Laboratoire CLIPS/IMAG}{Filtres de publication sur flux vidéo | Equipe IIHM (Joëlle Coutaz, François Bérard) | Mediaspace | C++}
 \end{cvtable}
 
 
 \cvsection{Certifications}
 \begin{cvtable}[1.5]
-	\cvitem{2019}{Microsoft Certified Solutions Developer}{Microsoft}
+	\cvitem{2022-2023-2024-2025}{Azure Developer Associate}{Microsoft}
+		{Examen AZ-204 - Developing Solutions for Microsoft Azure (822) }
+    \cvitem{2023}{Foundational C\#}{Microsoft}
+		{freecodecamp.org}
+    \cvitem{2019}{Microsoft Certified Solutions Developer}{Microsoft}
 		{MCSD AppBuilder | Examen 70-487 - Developing Microsoft Azure and Web Services (821)}
 	\cvitem{2019}{Microsoft Certified Solutions Associate}{Microsoft}
 		{MCSA WebApplication | Examen 70-486 - Developing ASP.NET MVC Web Applications (811) | Examen 70-483 - Programming in C\# (873)}
@@ -200,9 +225,9 @@
 	{}
     \cvitem{2000}{DESS Génie Informatique}{IMAG (im2ag.univ-grenoble-alpes.fr)}
 	{}
-	\cvitem{1997 -- 1999}{Licence | Magistère | Maîtrise Informatique}{IMAG (im2ag.univ-grenoble-alpes.fr)}
+	\cvitem{1997 -- 1999}{Licence | Magistère | Maîtrise Info.}{IMAG (im2ag.univ-grenoble-alpes.fr)}
 	{}
-	\cvitem{1995 -- 1997}{DEUG Mathématiques, Informatique et Applications aux Sciences}{UGA (univ-grenoble-alpes.fr)}
+	\cvitem{1997}{DEUG Math., Info. et App. aux Sciences}{UGA (univ-grenoble-alpes.fr)}
 	{}
 \end{cvtable}
 
